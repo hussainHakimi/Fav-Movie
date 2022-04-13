@@ -14,13 +14,17 @@ const toggleMovieModal = () => {
     toggleBackdrop();
 }
 
+const cancelAddMovie = () => {
+    toggleMovieModal();
+}
+
 const bakcdropClickHandler = () => {
     toggleMovieModal();
 }
 
 startAddMovieBtn.addEventListener('click', toggleMovieModal);
 backdrop.addEventListener('click', bakcdropClickHandler);
-cancelAddMovieBtn.addEventListener('click', bakcdropClickHandler);
+cancelAddMovieBtn.addEventListener('click', cancelAddMovie);
 
 
 // startAddMovieBtn.addEventListener('click', () => {
